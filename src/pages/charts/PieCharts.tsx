@@ -18,7 +18,7 @@ const PieCharts = () => {
         </section>
 
         <section>
-          <div><DoughnutChart labels={categories.map(i => i.heading)} data={categories.map(i => i.value)} backgroundColor={categories.map(i => `hsl(${i.value}, 100%, 50%)`)} legends={false} offset={[0, 0, 0, 80]} /></div>
+          <div><DoughnutChart labels={categories.map(i => i.heading)} data={categories.map(i => i.value)} backgroundColor={categories.map(i => `hsl(${i.value}, 100%, 50%)`)} legends={false} offset={[0, 0, 0, 80]} cutout={"50%"} /></div>
           <h2>Products Category Ratio</h2>
         </section>
 
@@ -28,7 +28,7 @@ const PieCharts = () => {
         </section>
 
         <section>
-          <div><DoughnutChart labels={["Marketing Cost", "Discount", "Burnt", "Production Cost", "Net Margin"]} data={[32, 21, 5, 25, 23]} backgroundColor={["hsl(100, 80%, 40%)", "hsl(19, 80%, 40%)", "hsl(69, 80%, 40%)", "hsl(300, 80%, 40%)", "rgb(53,162, 255)"]} legends={false} offset={[20, 30, 20, 30, 80]} /></div>
+          <div><DoughnutChart labels={["Marketing Cost", "Discount", "Burnt", "Production Cost", "Net Margin"]} data={[32, 21, 5, 25, 23]} backgroundColor={["hsl(100, 80%, 40%)", "hsl(19, 80%, 40%)", "hsl(69, 80%, 40%)", "hsl(300, 80%, 40%)", "rgb(53,162, 255)"]} legends={false} offset={[20, 30, 20, 30, 80]} cutout={"50%"} /></div>
           <h2>Revenue Distribution</h2>
         </section>
 
@@ -38,7 +38,7 @@ const PieCharts = () => {
         </section>
 
         <section>
-          <div><DoughnutChart labels={["Admin", "Customers"]} data={[40, 250]} backgroundColor={["hsl(335, 100%, 38%)", "hsl(44, 98%, 50%)"]} offset={[0, 80]} /></div>
+          <div><DoughnutChart labels={["Admin", "Customers"]} data={[40, 250]} backgroundColor={["hsl(335, 100%, 38%)", "hsl(44, 98%, 50%)"]} offset={[0, 80]} cutout={"50%"}/></div>
         </section>
       </main>
     </div>
